@@ -1,0 +1,30 @@
+de:
+  hello: "Hello German World"
+
+  contact:
+    create: 'Kontakt erfolgreich erstellt!'
+    send_message: 'Schick uns eine Nachricht'
+    address: 'Adresse'
+    call_at: 'Lass uns reden'
+    support: 'Allgemeine Unterstützung'
+    send_message: 'Nachricht senden'
+    email:
+      subject: 'Neue Abfrage'
+    placeholder:
+      first_name: 'Vorname'
+      last_name: 'Nachname'
+      email: 'Z.B. example@email.com'
+      phone_number: 'Z.B. +1 800 000000'
+      message: 'Schreiben Sie uns eine Nachricht'
+
+
+
+  error: 'Etwas ist schief gelaufen!'
+
+  helpers:
+    label:
+      contact:
+        name: "Sag uns deinen Namen *"
+        email: "Geben sie ihre E-Mail Adresse ein *"
+        contact_number: "Telefonnummer eingeben"
+        message: "Botschaft *"

@@ -31,3 +31,30 @@
 
 en:
   hello: "Hello world"
+
+  contact:
+    create: "Contact created successfully!"
+    send_message: 'Send Us A Message'
+    address: 'Address'
+    call_at: 'Lets Talk'
+    support: 'General Support'
+    send_message: 'Send Message'
+    email:
+      subject: 'New Query'
+    placeholder:
+      first_name: 'First Name'
+      last_name: 'First Name'
+      email: 'Eg. example@email.com'
+      phone_number: 'Eg. +1 800 000000'
+      message: 'Send us a message'
+
+
+  error: "Something went wrong!"
+
+  helpers:
+    label:
+      contact:
+        name: "Tell us your name *"
+        email: "Enter your email *"
+        contact_number: "Enter phone number"
+        message: "Message *"

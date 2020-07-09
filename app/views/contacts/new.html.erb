@@ -1,47 +1,53 @@
 <%= render 'partials/flashes' %>
 <div class="container-contact100">
+
   <div class="wrap-contact100">
     <%= form_with(model: @contact, local: true, url: contact_path, class: "contact100-form validate-form") do |form| %>
+      <div class="locale-switch">
+        <%= link_to "English", url_for( :locale => 'en' ), class: "#{I18n.locale == :en ? 'active-locale' : ''} " %>
+        <%= link_to "Deutch", url_for( :locale => 'de' ), class: "#{I18n.locale == :de ? 'active-locale' : ''}" %>
+      </div>
+
       <span class="contact100-form-title">
-        Send Us A Message
+        <%= t('contact.send_message') %>
       </span>
       <%= form.label :name, class: "label-input100" %>
       <div class="wrap-input100 rs1-wrap-input100 validate-input">
-        <%= form.text_field :first_name, class: "input100", placeholder: "First name", required: true%>
+        <%= form.text_field :first_name, class: "input100", placeholder: t('contact.placeholder.first_name'), required: true%>
         <span class="focus-input100"></span>
         <p class='error'><%= show_errors(@contact, :first_name) %></p>
       </div>
 
       <div class="wrap-input100 rs2-wrap-input100 validate-input">
-        <%= form.text_field :last_name, class: "input100", placeholder: "Last name", required: true%>
+        <%= form.text_field :last_name, class: "input100", placeholder: t('contact.placeholder.last_name'), required: true%>
         <span class="focus-input100"></span>
         <p class='error'><%= show_errors(@contact, :last_name) %></p>
       </div>
 
       <%= form.label :email, class: "label-input100" %>
       <div class="wrap-input100 validate-input">
-        <%= form.email_field :email, class: "input100", placeholder: "Eg. example@email.com", required: true %>
+        <%= form.email_field :email, class: "input100", placeholder: t('contact.placeholder.email'), required: true %>
         <span class="focus-input100"></span>
       </div>
       <p class='error'><%= show_errors(@contact, :email) %></p>
 
       <%= form.label :contact_number, class: "label-input100" %>
       <div class="wrap-input100">
-        <%= form.text_field :contact_number, class: "input100", placeholder: "Eg. +1 800 000000" %>
+        <%= form.text_field :contact_number, class: "input100", placeholder: t('contact.placeholder.phone_number') %>
         <span class="focus-input100"></span>
       </div>
       <p class='error'><%= show_errors(@contact, :contact_number) %></p>
 
       <%= form.label :message, class: "label-input100" %>
       <div class="wrap-input100 validate-input">
-        <%= form.text_area :message, class: "input100", placeholder: "Write us a message", required: true %>
+        <%= form.text_area :message, class: "input100", placeholder: t('contact.placeholder.message'), required: true %>
         <span class="focus-input100"></span>
       </div>
       <p class='error'><%= show_errors(@contact, :message) %></p>
 
       <div class="container-contact100-form-btn">
         <button>
-          <%= form.submit "Send Message", class: "contact100-form-btn" %>
+          <%= form.submit t('contact.send_message'), class: "contact100-form-btn" %>
           <span class="focus-input100"></span>
         </button>
       </div>
