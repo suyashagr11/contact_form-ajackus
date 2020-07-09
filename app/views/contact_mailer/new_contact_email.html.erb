@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Query</h1>
+    <p>Mr. <%= @contact.first_name %> wants to know more about us.</p>
+    <span> Email: <%= @contact.email %></span>
+    <% if @contact.contact_number %>
+      <span>Phone: <%= @contact.contact_number %></span>
+    <% end %>
+    <p>Message: <%= @contact.message %></p>
+  </body>
+</html>
