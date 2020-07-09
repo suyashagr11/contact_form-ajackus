@@ -43,6 +43,7 @@ gem 'letter_opener'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails', '~> 4.0.0'
   gem 'pry'
 end
 
