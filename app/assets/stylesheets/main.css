@@ -330,6 +330,14 @@ textarea.input100 {
   padding-left: 2px;
 }
 
+.locale-switch{
+  margin-left: auto;
+}
+
+.active-locale{
+  font-weight: bold;
+}
+
 .focus-input100 {
   position: absolute;
   display: block;
