@@ -1,24 +1,18 @@
-# README
+# Ajackus Test Task
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependencies
+* Ruby version : 2.6.5
+* Rails Version : 5.2.4.3
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+```gem install bundler && bundle install```
 
-* System dependencies
+## Environment Setup
+##### Set environment variables
+* CONTACT_US_EMAIL
 
-* Configuration
+## Run the rails server
 
-* Database creation
+```rails s```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
